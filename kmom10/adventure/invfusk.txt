@@ -1,0 +1,40 @@
+{
+    "inventory": {
+        "yxa": {
+            "pickable": true,
+            "status": ", nyv\u00e4ssad men med sprucket handtag.",
+            "locked": true,
+            "destructable": false,
+            "moveable": false,
+            "visible": true,
+            "description": "En yxa {status}",
+            "inspect": "Yxan \u00e4r fortfarande vass men handtaget h\u00e5ller p\u00e5 att g\u00e5 i bitar.",
+            "contains": false,
+            "openable": false
+        },
+        "f\u00e5gelben": {
+            "pickable": true,
+            "status": "Blodiga",
+            "locked": true,
+            "destructable": false,
+            "moveable": false,
+            "visible": true,
+            "description": "{status} f\u00e5gelben.",
+            "inspect": "\"Kvarlevorna av f\u00e5geln. Ush.\" Marvin ser illam\u00e5ende ut.",
+            "contains": false,
+            "openable": false
+        },
+        "klo": {
+            "pickable": true,
+            "status": "bj\u00f6rn",
+            "locked": true,
+            "destructable": false,
+            "moveable": false,
+            "visible": true,
+            "description": "Det finns en klo inte mycket st\u00f6rre \u00e4n din hand.",
+            "inspect": "\"P\u00e5 klon finns en bj\u00f6rn avbildad i guld.\" ber\u00e4ttar trogne Marvin.",
+            "contains": false,
+            "openable": false
+        }
+    }
+}

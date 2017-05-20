@@ -1,0 +1,293 @@
+{
+    "activeroom": "room1",
+
+    "room1": {
+        "description": "Ett svagt ljus ifrån hålet du föll igenom lyser upp rummet. Du ser en tunna i ett av hörnen och en bokhylla i det andra och mellan dem, en stor dörr i sten.",
+
+        "inspect" : "\"Jag se kan se ett svagt glimmande bakom tunnan.\", säger Marvin och kisar med ögonen.",
+
+        "clue": "Be Marvin flytta lite saker.",
+
+        "objects": {
+            "tunna": {
+                "description": "{status} finns en tunna gjord i trä.",
+                "inspect": "\"Den är tom.\", svarar Marvin.",
+                "status": "I det vänstra hörnet",
+                "statusopt": ["I det vänstra hörnet", "Emot den vänstra väggen"],
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": true,
+                "moveDesc": "Marvin flyttar på tunnan. \"Aha! Här ligger en nyckel!\"",
+                "locked": false,
+                "contains": "nyckel"
+            },
+            "bokhylla": {
+                "description": "I rummets högra hörn finns en tom bokhylla.",
+                "inspect": "\"Lådan verkar vara igenspikad på alla sidor. Den går inte att öppna med händerna.\" berättar Marvin.",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "moveDesc": "Marvin försöker. \"Den är för tung\" säger han till sist.",
+                "locked": false,
+                "contains": false
+            },
+            "nyckel": {
+                "description": "En liten nyckel i silver ligger bakom den.",
+                "inspect": "\"Den här passar nog i dörrem.\" föreslår Marvin.",
+                "visible": false,
+                "openable": false,
+                "pickable": true,
+                "destructable": false,
+                "moveable": false,
+                "moveDesc": "\"Jag kan plocka upp den istället\" svarar Marvin.",
+                "locked": false,
+                "contains": false
+            },
+            "dörr": {
+                "description": "På andra sidan rummet finns en dörr i sten.",
+                "status": "katt",
+                "visible": true,
+                "inspect": "\"Dörren är gjord av sten, ett handtag och ett nyckelhål. Dörren är en dörr helt enkelt\", förklarar Marvin och ler för sig själv.",
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": "nyckel",
+                "contains": false
+            }
+        }
+    },
+    "room2": {
+        "description": "En oljelampa lyser upp rummet men det är fortfarande svårt att se. \"Jag ser något trekantigt i mörkret\", säger Marvin. \"Vad ser du?\"",
+
+        "inspect" : "\"Titta! Man kan nog passa in ett objekt i dörren.\", Marvin pekar på en gjutning i dörren.",
+
+        "clue": "\"Inspektera alla objekt noggrant, kan vi flytta något av dem? Har de något gemensamt?\", säger Marvin.",
+
+        "objects": {
+            "stenblock": {
+                "description": "I mitten av rummet finns ett trekantigt stenblock med en avbild av en {status}.",
+                "inspect": "\"Stenblocket verkar gå att flytta. Det är olika djur på varje sida.\" förklarar Marvin fundersamt.",
+                "visible": true,
+                "status": "katt",
+                "statusopt": ["katt", "björn", "fågel"],
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": true,
+                "moveDesc": "Objektet roterar på plats när Marvin häver sig emot det.",
+                "locked": false,
+                "contains": false
+            },
+            "dörr": {
+                "description": "På andra sidan rummet finns en dörr i sten.",
+                "status": "katt",
+                "visible": true,
+                "inspect": "Du ser att något sorts objekt passar in i dörrens mitt. Utgjutningen liknar en klo.",
+                "pickable": false,
+                "openable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": "klo",
+                "contains": false
+            },
+            "klo": {
+                "description": "Det finns en klo inte mycket större än din hand.",
+                "inspect": "\"På klon finns en björn avbildad i guld.\" berättar trogne Marvin.",
+                "status": "björn",
+                "visible": true,
+                "openable": false,
+                "pickable": true,
+                "destructable": false,
+                "moveable": false,
+                "locked": true,
+                "contains": false
+            }
+        }
+    },
+    "room3": {
+        "description": "Ni befinner er i ett rum med kallt murat golv och murade väggar. ",
+
+        "inspect" : "\"Det finns inget annat än den här trälådan\", säger Marvin och kliar sig i huvudet.",
+
+        "clue": "Trälådan ser inte så tålig ut.",
+
+        "objects": {
+            "dörr": {
+                "description": "På andra sidan rummet finns en {status} dörr.",
+                "inspect": "Dörren är gjord av trä.",
+                "status": "bastant",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": true,
+                "contains": false
+            },
+            "trälåda": {
+                "description": "Framför dig ser du en {status} tr\u00e4l\u00e5da.",
+                "inspect": "Trälådan är ordentligt ihoppspikad, men däremot verkar plankorna svaga.",
+                "moveDesc": "\"Marvin provar men lyckas inte flytta på lådan.\"",
+                "status": "stor fyrkantig",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": true,
+                "moveable": true,
+                "locked": false,
+                "contains": "yxa"
+            },
+            "yxa": {
+                "description": "En yxa {status}",
+                "inspect": "Yxan är fortfarande vass men handtaget håller på att gå i bitar.",
+                "status": ", nyv\u00e4ssad men med sprucket handtag.",
+                "visible": false,
+                "openable": false,
+                "pickable": true,
+                "destructable": false,
+                "moveable": false,
+                "locked": true,
+                "contains": false
+            }
+        }
+    },
+    "room4": {
+        "description": "Rummet är mörkt och luktar jord.",
+
+        "inspect" : "\"En fågel, här inne?\" säger Marvin och stirrar förundrat på fågeln.",
+
+        "clue": "Du behöver fågel ben.",
+
+        "objects": {
+            "dörr": {
+                "description": "På andra sidan rummet finns en {status} stendörr.",
+                "inspect": "Dörren är gjord av sten.",
+                "status": "bastant",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": "fågelben",
+                "contains": false
+            },
+            "fågel": {
+                "description": "En {status} fågel flaxar omkring i rummet.",
+                "status": "levande",
+                "inspect": "Det verkar vara en korp.",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": true,
+                "moveable": false,
+                "locked": true,
+                "contains": "fågelben"
+            },
+            "fågelben": {
+                "description": "{status} fågelben.",
+                "inspect": "\"Kvarlevorna av fågeln. Ush.\" Marvin ser illamående ut.",
+                "status": "Blodiga",
+                "visible": false,
+                "openable": false,
+                "pickable": true,
+                "destructable": false,
+                "moveable": false,
+                "locked": true,
+                "contains": false
+            },
+            "bord": {
+                "description": "Ett fyrkantigt bord står i mitten av rummet.",
+                "inspect": "Bordet har gjutningar som efterliknar fågelben.",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": "fågelben",
+                "contains": false
+            }
+        }
+    },
+    "room5": {
+        "description": "Rummets väggar är gjorda av vackert placerade stenar. Formen på rummet är som en kupol.",
+
+        "inspect" : "\"Allt som finns är den här brunen, det står något på den.\" säger Marvin.",
+
+        "clue": "Läs texten på brunnen. Du hittade något av silver i första rummet.",
+
+        "objects": {
+            "dörr": {
+                "description": "På andra sidan rummet finns en {status} stendörr.",
+                "inspect": "Dörren är gjord av sten och på den syns en nyckel avbildad.",
+                "status": "bastant",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": true,
+                "contains": false
+            },
+            "brunn": {
+                "description": "En vackert dekorerad brunn finns i rummet.",
+                "status": "levande",
+                "inspect": "\"På brunnen står det: Släpp ditt silver och vägen är fri.\" Marvin tittar på dig och hoppas att du vet vad det betyder.",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": false,
+                "contains": false
+            }
+        }
+    },
+    "room6": {
+        "description": "Rummet är helt tomt. Men Hertig Mos röst ekar i era öron. \"Endast en får gå härifrån med livet i behåll. Gör nu erat val.\" Marvin stirrar förskräckt på dig. Skriv \"använd marvin\" för att döda Marvin, eller \"använd yxa\" för att använda den på dig själv.",
+
+        "inspect" : "\"Jag ser ingen annan utväg\", säger Marvin nedlåtet.\"Du eller jag?\"",
+
+        "clue": "Du eller Marvin. Sparka Marvin eller använd yxan på dig själv.",
+
+        "objects": {
+            "dörr": {
+                "description": "På andra sidan rummet finns en {status} stendörr.",
+                "inspect": "Dörren är gjord av sten och på den syns en nyckel avbildad.",
+                "status": "bastant",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": true,
+                "contains": false
+            }
+        }
+    },
+    "room7": {
+        "description": "Du befinner dig i ett odekorerat rum.",
+
+        "inspect" : "Ett tomt rum med en utgång som leder ut i det fria.",
+
+        "clue": "Gå ut för att vinna spelet.",
+
+        "objects": {
+            "dörr": {
+                "description": "Dörren till friheten står öppen framför dig.",
+                "inspect": "Dörren är gjord av sten och en fredsduva har ristats in i den.",
+                "visible": true,
+                "openable": false,
+                "pickable": false,
+                "destructable": false,
+                "moveable": false,
+                "locked": false,
+                "contains": false
+            }
+        }
+    }
+}

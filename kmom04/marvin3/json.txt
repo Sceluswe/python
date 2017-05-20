@@ -1,0 +1,16 @@
+{
+    "marvinArray": [
+        {
+            "item": "flower\n"
+        },
+        {
+            "item": "flower\n"
+        },
+        {
+            "item": "flower\n"
+        },
+        {
+            "item": "flower\n"
+        }
+    ]
+}
